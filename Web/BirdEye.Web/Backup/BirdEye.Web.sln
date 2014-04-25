@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdEye.Web", "BirdEye.Web\BirdEye.Web.csproj", "{AD844C32-C6F8-4003-AB15-3EE43CC06A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdEye.Common", "BirdEye.Common\BirdEye.Common.csproj", "{7C01D56D-013D-450C-9EA7-ABB322C434D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD844C32-C6F8-4003-AB15-3EE43CC06A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD844C32-C6F8-4003-AB15-3EE43CC06A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD844C32-C6F8-4003-AB15-3EE43CC06A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD844C32-C6F8-4003-AB15-3EE43CC06A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C01D56D-013D-450C-9EA7-ABB322C434D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C01D56D-013D-450C-9EA7-ABB322C434D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C01D56D-013D-450C-9EA7-ABB322C434D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C01D56D-013D-450C-9EA7-ABB322C434D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

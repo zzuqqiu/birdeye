@@ -1,0 +1,5 @@
+E:\BirdEye\Server\BirdEye.Server\WcfService1\bin\WcfService1.dll
+E:\BirdEye\Server\BirdEye.Server\WcfService1\bin\WcfService1.pdb
+E:\BirdEye\Server\BirdEye.Server\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+E:\BirdEye\Server\BirdEye.Server\WcfService1\obj\Debug\WcfService1.dll
+E:\BirdEye\Server\BirdEye.Server\WcfService1\obj\Debug\WcfService1.pdb

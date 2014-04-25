@@ -1,0 +1,169 @@
+﻿@model BirdEye.Web.Models.PersonInfo
+@{
+	ViewBag.Title = "BasicData";
+	Layout = "~/Views/Account/PersonCenter.cshtml";
+}
+
+<h2></h2>
+<div>
+	<fieldset>
+		<legend>个人资料</legend>
+		<table>
+			<tbody>
+				<tr>
+					<td id="myTd">昵称
+					</td>
+					<td>
+						<input type="text" id="UserName" ng-model='person.UserName' />
+						<span id="noNickSpan"></span>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>邮箱
+					</td>
+					<td>
+						<input ng-model="person.Email" type="text" id="Email" readonly="readonly" @*value=@Html.DisplayFor(model => model.Email) *@/>
+					</td>
+				</tr>
+				@*<tr>
+                <td>
+                    生日
+                </td>
+                <td>
+                    <select>
+                        <option>Solar</option>
+                        <option>Lunar</option>
+                    </select>
+                    <input type="text" value="1988" size="4px" />
+                    <span>年</span>
+                    <input type="text" value="9" size="1px" />
+                    <span>月</span>
+                </td>
+            </tr>*@
+				<tr>
+					<td>头像</td>
+					<td>
+						@*<img id="headPortrait" width="192" height="273" usemap="headmap" alt="Head"/>
+					<map name="headmap">
+						<area shape="rect" coords="0,0,192,273"
+						      target="_blank"/>
+					</map>
+					<input id="uploadheadportrait" type="file" value="Upload" />*@
+						<div style="border-width: thin; border-style: groove; border-color: azure; width: 125px; height: 125px">
+							<canvas id="canvasheadportrait" width="125" height="125"></canvas>
+						</div>
+						<input type='file' id='selectheadportrait' name='headportrait' value="Select" />
+						<input type="button" id='uploadheadportrait' value="Upload" disabled="disabled" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			<input type="button" value="Test" id="btntest"/>
+			<input type="button" value="保存" id="Save" ng-click="save()" />
+			<label id="saveTrue" style="color: Green" ng-model="successMsg">
+			</label>
+			<label id="saveFalse" style="color: Red" ng-model="errorMsg">
+			</label>
+		</p>
+	</fieldset>
+</div>
+<script type="text/javascript">
+	$().ready(function () {
+		initial();
+
+		function initial() {
+			//$.ajax(
+			//{
+			//	type: "get",
+			//	url: "InitialBasicData",
+			//	dataType: "json",
+			//	success: function (data, status) {
+			//		if (data != null) {
+			//			if (data["UserName"] == null || data["UserName"] == "") {
+			//				$("#noNickSpan")[0].innerText = "*您尚未设置您的昵称";
+			//			}
+			//			$("#UserName")[0].value = data["UserName"];
+			//			$("#Email")[0].value = data["Email"];
+			//			$("#headPortrait").attr('src', data["HeadPortrait"]);
+			//		}
+			//	},
+			//	error: function (data) {
+			//		alert("bad");
+			//	}
+			//});
+		}
+
+		//        $("#UserName")[0].value=;
+		$("#btntest").click(function () {
+			try {
+				$.ajax(
+					{
+						type: "post",
+						url: "Test",
+						dataType: "json",
+						success: function(data, status) {
+							if (data != null) {
+								if (typeof(data) == "string") {
+									$("#saveTrue")[0].innerText = "";
+									$("#saveFalse")[0].innerText = data;
+								} else {
+									$("#UserName")[0].value = data["UserName"];
+									$("#Email")[0].value = data["Email"];
+									$("#saveTrue")[0].innerText = "Save successfully";
+									$("#myTd")[0].innerText = data["Email"];
+									//location.reload();
+								}
+							}
+						},
+						error: function(data) {
+							$("#saveFalse")[0].innerText = "Failed to save!";
+						}
+					});
+			} catch (err) {
+				$("#saveFalse")[0].innerText = err;
+			}
+
+		});
+
+		$("#selectheadportrait").change(function () {
+			// Refer to http://stackoverflow.com/questions/10209227/open-local-image-in-canvas
+			// And http://jsfiddle.net/fWLJ9/
+			var ctx = document.getElementById('canvasheadportrait').getContext('2d');
+			var img = new Image();
+			var f = document.getElementById("selectheadportrait").files[0];
+			var url = window.URL || window.webkitURL;
+			var src = url.createObjectURL(f);
+
+			img.src = src;
+			img.onload = function () {
+				ctx.drawImage(img, 0, 0);
+				url.revokeObjectURL(src);
+			};
+
+			$("#uploadheadportrait").removeAttr("disabled");
+
+
+			//$.ajax({
+			//	type: "get",
+			//	url: "UploadHeadPortrait",
+			//	dataTye: "json",
+			//	success: function(data, status) {
+
+			//	},
+			//	error:function() {
+
+			//	}
+			//});
+		});
+
+		$("#uploadheadportrait").click(function () {
+
+		});
+	});
+
+</script>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="gb2312"?>
+<User>
+  <Node UserName="Loren" Password="111111" Email="11@qq.com" PasswordQuestion="" PasswordAnswer="" />
+  <Node UserName="peter" Password="111111" Email="11" PasswordQuestion="" PasswordAnswer="" />
+</User>

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Study";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="personSetting">
+    <h2>
+        Study</h2>
+    <div class="panel">
+        <div class="pSetting_lSide">
+            <dl>
+                <dt><strong>Invoice</strong></dt>
+                <dd>@Html.ActionLink("Invoice","Index","Study")
+                </dd>
+                <dd>
+                </dd>
+                <hr />
+                <dt><strong>ABC</strong></dt>
+                <dd>
+                <dd>
+                    DEF</dd>
+            </dl>
+        </div>
+        <div class="pSetting_rSide">
+            @RenderBody()
+        </div>
+    </div>
+</div>

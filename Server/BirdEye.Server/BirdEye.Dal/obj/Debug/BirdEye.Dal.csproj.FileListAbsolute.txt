@@ -1,0 +1,9 @@
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\bin\Debug\BirdEye.Dal.dll
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\bin\Debug\BirdEye.Dal.pdb
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\bin\Debug\EntityFramework.dll
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\bin\Debug\EntityFramework.xml
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\obj\Debug\BirdEye.Dal.dll
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\obj\Debug\BirdEye.Dal.pdb
+E:\BirdEye\Server\BirdEye.Server\BirdEye.Dal\obj\Debug\BirdEye.Dal.csprojResolveAssemblyReference.cache

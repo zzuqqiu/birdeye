@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app='personInfoApp'>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/style.css")" rel="stylesheet" type="text/css" />
+	@*<script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")"></script>*@
+	<script src="../../Scripts/angular.js"></script>
+	<script src="../../Scripts/angular-route.js"></script>
+	<script src="../../Scripts/app.js"></script>
+	<script src="../../Scripts/services.js"></script>
+	<script src="../../Scripts/Study/Invoice.js"></script>
+	<script src="../../Scripts/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="title">
+            <h1>
+                鸟儿看</h1>
+        </div>
+        <div id="logindisplay">
+            @Html.Partial("_LogOnPartial")
+        </div>
+        <div id="menucontainer">
+            <ul id="menu">
+                <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+	            <li>@Html.ActionLink("371&0720", "View371", "Home")</li>
+	            <li><a href="/Study">Study</a></li>
+				<li>@Html.ActionLink("Customer", "Index", "Customer")</li>
+            </ul>
+        </div>
+    </div>
+    <div class="page">
+        <div id="main">
+            @RenderBody()
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+</html>

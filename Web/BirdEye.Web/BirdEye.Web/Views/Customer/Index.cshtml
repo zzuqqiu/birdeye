@@ -1,0 +1,65 @@
+﻿@model IEnumerable<BirdEye.Common.Entity.Customer>
+@{
+	ViewBag.Title = "title";
+}
+
+<h2>Customer List</h2>
+<table border="1">
+	<tr>
+		<th>ID
+		</th>
+		<th>Name</th>
+		<th>Detail</th>
+	</tr>
+	@foreach (var p in Model)
+	{
+		<tr>
+			<td>@p.CustomerID</td>
+			<td>@p.FirstName@(" ")@p.LastName</td>
+			<td>@p.Detail</td>
+		</tr>
+	}
+</table>
+<h2>Web Socket</h2>
+<div>
+	<input type="button" value="Connect" id="btnConnect" />
+    <input type="button" value="Disconnect" id="btnDisconnect" /><br />
+    <input type="text" id="textInput" />
+    <input type="button" value="Send" id="btnSend" /><br />
+    <span id="spanStatus">(display)</span>
+</div>
+<div></div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.js"></script>
+    <script type="text/javascript">
+        var ws;
+        $().ready(function () {
+            $("#btnConnect").click(function () {
+                $("#spanStatus").text("connecting");
+                ws = new WebSocket("ws://localhost:8012/HelloService");
+                ws.onopen = function () {
+                    $("#spanStatus").text("connected");
+                };
+                ws.onmessage = function (evt) {
+                    $("#spanStatus").text(evt.data);
+                };
+                ws.onerror = function (evt) {
+                    $("#spanStatus").text(evt.message);
+                };
+                ws.onclose = function () {
+                    $("#spanStatus").text("disconnected");
+                };
+            });
+            $("#btnSend").click(function () {
+                if (ws.readyState == WebSocket.OPEN) {
+                    ws.send($("#textInput").val());
+                }
+                else {
+                    $("#spanStatus").text("Connection is closed");
+                }
+            });
+            $("#btnDisconnect").click(function () {
+                ws.close();
+            });
+        });
+    </script>
+

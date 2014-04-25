@@ -1,0 +1,7 @@
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\bin\Debug\BirdEye.Server.dll
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\bin\Debug\BirdEye.Server.pdb
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\bin\Debug\BirdEye.Common.dll
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\bin\Debug\BirdEye.Common.pdb
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\obj\Debug\ResolveAssemblyReference.cache
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\obj\Debug\BirdEye.Server.dll
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Server\obj\Debug\BirdEye.Server.pdb

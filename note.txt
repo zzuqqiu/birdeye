@@ -1,0 +1,7 @@
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\installutil.exe E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe
+
+sc delete BirdEye.WCFService
+
+
+1. How to: Host a WCF Service in a Managed Windows Service
+http://msdn.microsoft.com/en-us/library/ms733069.aspx

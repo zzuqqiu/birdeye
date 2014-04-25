@@ -1,0 +1,27 @@
+﻿@{
+	ViewBag.Title = "PersonCenter";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="../../Scripts/controller.js"></script>
+<div id="personSetting" ng-controller="PersonInfoCtrl">
+	<h2>设置</h2>
+	<div class="panel">
+		<div class="pSetting_lSide">
+			<dl>
+				<dt><strong>个人信息</strong></dt>
+				<dd>@Html.ActionLink("基本信息", "BasicData", "Account")
+				</dd>
+				<dd>
+					@Html.ActionLink("兴趣爱好", "MyInterest", "Account")
+				</dd>
+				<hr />
+				<dt><strong>安全设置</strong></dt>
+				<dd>
+					@Html.ActionLink("更改密码", "ChangePassword", "Account")</dd>
+			</dl>
+		</div>
+		<div class="pSetting_rSide">
+			@RenderBody()
+		</div>
+	</div>
+</div>

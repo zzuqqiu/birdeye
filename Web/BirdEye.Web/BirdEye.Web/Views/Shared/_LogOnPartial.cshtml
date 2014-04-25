@@ -1,0 +1,31 @@
+﻿@if (Request.IsAuthenticated)
+{
+	<text>欢迎 <strong id="welcomeUserName">@*{{person.UserName}}!*@</strong>
+	@Html.ActionLink("注销", "LogOff", "Account") | @Html.ActionLink("个人中心", "BasicData", "Account")</text>
+}
+else
+{
+	<a href="/Account/Register">注册</a>
+	<span>| </span>
+	<a href="/Account/LogOn">登录</a>
+}
+<script type="text/javascript">
+	$().ready(function () {
+		if (jQuery("#welcomeUserName")[0] != undefined) {
+			jQuery.ajax(
+			{
+				type: "post",
+				url: "/Account/GetWelcomeUserName",
+				dataType: "json",
+				success: function (data, status) {
+					if (data != null && typeof (data) == "string") {
+						jQuery("#welcomeUserName")[0].innerText = data;
+					}
+				},
+				error: function (data) {
+					alert("bad");
+				}
+			});
+		}
+	});
+</script>

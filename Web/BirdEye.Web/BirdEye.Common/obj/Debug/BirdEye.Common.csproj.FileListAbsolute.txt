@@ -1,0 +1,15 @@
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Common\bin\Debug\BirdEye.Common.dll
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Common\bin\Debug\BirdEye.Common.pdb
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\ResolveAssemblyReference.cache
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.dll
+F:\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.pdb
+E:\Project\BirdEye\Web\BirdEye.Web\BirdEye.Common\bin\Debug\BirdEye.Common.dll
+E:\Project\BirdEye\Web\BirdEye.Web\BirdEye.Common\bin\Debug\BirdEye.Common.pdb
+E:\Project\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.dll
+E:\Project\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.pdb
+E:\BirdEye\Web\BirdEye.Web\BirdEye.Common\bin\Debug\BirdEye.Common.dll
+E:\BirdEye\Web\BirdEye.Web\BirdEye.Common\bin\Debug\BirdEye.Common.pdb
+E:\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.dll
+E:\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.pdb
+E:\BirdEye\Web\BirdEye.Web\BirdEye.Common\obj\Debug\BirdEye.Common.csprojResolveAssemblyReference.cache

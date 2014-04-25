@@ -1,0 +1,39 @@
+﻿Installing assembly 'E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.dll'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.InstallLog
+   assemblypath = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.dll
+Installing service BirdEye.WCFService...
+Service BirdEye.WCFService has been successfully installed.
+Creating EventLog source BirdEye.WCFService in log Application...
+Committing assembly 'E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.dll'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.InstallLog
+   assemblypath = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.dll
+Installing assembly 'E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.InstallLog
+   assemblypath = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe
+Installing service BirdEye.WCFService...
+Service BirdEye.WCFService has been successfully installed.
+Creating EventLog source BirdEye.WCFService in log Application...
+Committing assembly 'E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.InstallLog
+   assemblypath = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe
+Installing assembly 'E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.InstallLog
+   assemblypath = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe
+Installing service BirdEye.WCFService...
+Service BirdEye.WCFService has been successfully installed.
+Creating EventLog source BirdEye.WCFService in log Application...
+Committing assembly 'E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.InstallLog
+   assemblypath = E:\BirdEye\Server\BirdEye.Server\BirdEye.Bll\bin\Debug\BirdEye.Bll.exe

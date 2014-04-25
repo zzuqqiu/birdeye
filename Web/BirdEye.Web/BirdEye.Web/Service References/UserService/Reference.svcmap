@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6c43d48c-069c-4eb8-86d4-653666f69225" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8011/UserService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UserService.disco" MetadataType="Disco" ID="2aff9c45-6fe1-44c5-ab93-485baf6dbb2c" SourceId="1" SourceUrl="http://localhost:8011/UserService?disco" />
+    <MetadataFile FileName="CustomerService.wsdl" MetadataType="Wsdl" ID="b933e685-760b-4e5f-9a82-4a8710d3d4f2" SourceId="1" SourceUrl="http://localhost:8011/UserService?wsdl" />
+    <MetadataFile FileName="UserService.xsd" MetadataType="Schema" ID="c26d11d6-9dd3-4e77-92f8-7e7bc1dbea87" SourceId="1" SourceUrl="http://localhost:8011/UserService?xsd=xsd0" />
+    <MetadataFile FileName="UserService1.xsd" MetadataType="Schema" ID="6e294a78-b5ec-4efd-8ec3-3bc1a8bf2b28" SourceId="1" SourceUrl="http://localhost:8011/UserService?xsd=xsd1" />
+    <MetadataFile FileName="UserService2.xsd" MetadataType="Schema" ID="751d2bcd-5154-422a-ab82-ddc84a1f84b2" SourceId="1" SourceUrl="http://localhost:8011/UserService?xsd=xsd2" />
+    <MetadataFile FileName="UserService3.xsd" MetadataType="Schema" ID="092180f0-0e0b-4a35-b2fb-5a7d621f0988" SourceId="1" SourceUrl="http://localhost:8011/UserService?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
